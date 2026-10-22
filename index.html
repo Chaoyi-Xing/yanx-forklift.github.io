@@ -1753,12 +1753,12 @@
       max-width: 1180px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
     }
 
     .service-card {
-      padding: 34px 30px;
+      padding: 30px 24px;
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -1796,8 +1796,9 @@
     .service-card h3 {
       margin: 0 0 12px;
       color: var(--ink);
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 850;
+      line-height: 1.3;
     }
 
     .service-card p {
@@ -2092,6 +2093,7 @@
       .value-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
       .why-container { grid-template-columns: 1fr; }
       .process-grid { grid-template-columns: repeat(2, 1fr); }
+      .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .footer-inner { grid-template-columns: repeat(2, 1fr); }
     }
 
@@ -2555,48 +2557,56 @@
 
       <div class="process-item">
         <div class="process-number">03</div>
-          <h3>Order Preparation</h3>
-          <p>YanX communicates the confirmed configuration and coordinates order updates and export packing with the manufacturing team.</p>
+        <h3>Order Preparation</h3>
+        <p>YanX communicates the confirmed configuration and coordinates order updates with the manufacturing team.</p>
       </div>
 
       <div class="process-item">
         <div class="process-number">04</div>
         <h3>Shipping &amp; Support</h3>
-        <p>We coordinate export packing and shipment, then continue to help with documentation, parts and technical questions.</p>
+        <p>YanX coordinates export packing and shipment and remains your contact for order-related questions.</p>
       </div>
     </div>
   </section>
 
   <section class="section section-soft" id="parts-service">
     <div class="section-intro">
-      <span class="section-kicker">Parts &amp; Service</span>
-      <h2 class="section-title">Keep Your Fleet Moving</h2>
-      <p class="section-subtitle-text">Equipment is only useful when it stays productive. Our support is built around easier maintenance and faster parts communication.</p>
+      <span class="section-kicker">Before &amp; After Delivery</span>
+      <h2 class="section-title">Support for Your Order and Equipment</h2>
+      <p class="section-subtitle-text">YanX works directly with the manufacturing team to clarify equipment and support details for overseas buyers.</p>
     </div>
 
     <div class="service-grid">
       <div class="service-card">
         <div class="service-icon">
-          <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5-5L7.8 3.2l3 3L9 8 6 5 4.2 6.8a4 4 0 0 0 5 5L18 20.6a2 2 0 1 0 2.8-2.8z"></path></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3z"></path><path d="m8.5 12 2.5 2.5 4.5-5"></path></svg>
         </div>
-        <h3>Spare Parts Support</h3>
-        <p>Send the truck model, serial information and a clear photo. We help identify common service and replacement parts.</p>
+        <h3>Quality Control &amp; Pre-Delivery Checks</h3>
+        <p>We confirm which pre-delivery checks apply to your selected truck and whether inspection details or records can be provided before the order is finalized.</p>
       </div>
 
       <div class="service-card">
         <div class="service-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"></path><path d="M12 6v6l4 2"></path></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v12H9l-4 4V4z"></path><path d="M9 9h6"></path><path d="M9 12h4"></path></svg>
         </div>
-        <h3>Fast Response</h3>
-        <p>Direct communication through email and WhatsApp helps reduce delays when you need specifications, documents or parts.</p>
+        <h3>Warranty &amp; Technical Support</h3>
+        <p>We clarify warranty terms before order confirmation and help coordinate technical questions using the truck model, serial number and photos or video.</p>
       </div>
 
       <div class="service-card">
         <div class="service-icon">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16v12H5.5L4 17.5z"></path><path d="M8 20h8"></path><path d="M12 16v4"></path></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5-5L7.8 3.2l3 3L9 8 6 5 4.2 6.8a4 4 0 0 0 5 5L18 20.6a2 2 0 1 0 2.8-2.8z"></path></svg>
         </div>
-        <h3>Remote Technical Help</h3>
-        <p>For common setup and operating questions, our team can review photos and videos and coordinate practical next steps.</p>
+        <h3>Spare Parts</h3>
+        <p>Share your truck model, serial number and the part you need. YanX helps identify suitable replacements and confirm availability, pricing and shipping options.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6V2z"></path><path d="M14 2v5h4"></path><path d="M9 12h6"></path><path d="M9 16h6"></path></svg>
+        </div>
+        <h3>Documentation &amp; Export</h3>
+        <p>We help confirm available manuals and export documents for your model and destination, alongside packing and shipping arrangements.</p>
       </div>
     </div>
   </section>
@@ -2651,9 +2661,23 @@
     </details>
 
     <details class="faq-item">
-      <summary>Do you provide spare parts and after-sales support?</summary>
+      <summary>What pre-delivery checks are available?</summary>
       <div class="faq-answer">
-        <p>Yes. We can help identify common replacement parts based on the truck model, serial information and photos. We also provide remote communication for setup and common technical questions.</p>
+        <p>Checks and available records depend on the selected model and configuration. YanX can confirm the applicable pre-delivery information with the manufacturing team before order confirmation.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What warranty terms apply to my order?</summary>
+      <div class="faq-answer">
+        <p>The warranty period, covered items, exclusions, start date and claim steps are confirmed in your final quotation and contract.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can you help with spare parts and technical questions?</summary>
+      <div class="faq-answer">
+        <p>Yes. Send the truck model and serial number, with clear photos or video when relevant. YanX can help identify the request and coordinate suitable next steps.</p>
       </div>
     </details>
 
@@ -2697,10 +2721,26 @@
     },
     {
       "@type": "Question",
-      "name": "Do you provide spare parts and after-sales support?",
+      "name": "What pre-delivery checks are available?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. YanX can help identify common replacement parts using the truck model, serial information and photos, and can provide remote support for setup and common technical questions."
+        "text": "Checks and available records depend on the selected model and configuration. YanX can confirm the applicable pre-delivery information with the manufacturing team before order confirmation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What warranty terms apply to my order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The warranty period, covered items, exclusions, start date and claim steps are confirmed in your final quotation and contract."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help with spare parts and technical questions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Send the truck model and serial number, with clear photos or video when relevant. YanX can help identify the request and coordinate suitable next steps."
       }
     },
     {
