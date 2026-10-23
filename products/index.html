@@ -988,6 +988,40 @@ html::after {
   line-height: 1.7;
 }
 
+.catalog-download-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: -5px 0 25px;
+  padding: 18px 20px;
+  border-left: 4px solid #cc0000;
+  background: #f8f8f8;
+}
+
+.catalog-download-panel strong { display: block; color: #171717; font-size: 16px; }
+.catalog-download-panel p { margin: 3px 0 0; color: #555; font-size: 13px; line-height: 1.5; }
+
+.catalog-download-button {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 18px;
+  border-radius: 4px;
+  color: #fff;
+  background: #cc0000;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-download-button:hover, .catalog-download-button:focus-visible { background: #a40000; color: #fff; }
+.catalog-download-button:focus-visible { outline: 3px solid #171717; outline-offset: 3px; }
+
 .catalog-value-points {
   margin: -5px 0 25px;
   display: flex;
@@ -1383,6 +1417,9 @@ html::after {
 }
 
 @media (max-width: 700px) {
+  .catalog-download-panel { flex-direction: column; align-items: stretch; }
+  .catalog-download-button { width: 100%; }
+
   .header-meta-row {
     align-items: flex-start;
     flex-direction: column;
@@ -1461,6 +1498,11 @@ html::after {
           <svg viewBox="0 0 24 24"><path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"/></svg>
         </button>
       </div>
+    </div>
+
+    <div class="catalog-download-panel">
+      <div><strong>YanX Forklift Product Catalog 2026</strong><p>Explore all 16 product families in one 12-page PDF.</p></div>
+      <a href="/downloads/catalog/YanX_Forklift_Product_Catalog_2026.pdf" class="catalog-download-button" type="application/pdf" download>Download Product Catalog</a>
     </div>
 
     <div class="catalog-value-points" aria-label="YanX purchasing advantages">
